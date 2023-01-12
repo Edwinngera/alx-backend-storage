@@ -1,6 +1,7 @@
----Create users table
-CREATE TABELE IF NOT EXISTS users(
+-- Creates users table.
+CREATE TABLE IF NOT EXISTS users (
     id INT NOT NULL AUTO_INCREMENT,
     email VARCHAR(255) NOT NULL UNIQUE,
-    name VARCHAR(255) PRIMARY KEY(id)
-)
+    name VARCHAR(255),
+    PRIMARY KEY (id)
+);
